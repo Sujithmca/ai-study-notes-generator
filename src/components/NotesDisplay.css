@@ -1,0 +1,37 @@
+.notes-display {
+  animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.notes-title {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f0f0ff, #ff3cac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.notes-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.notes-body {
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
